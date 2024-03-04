@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ChatGPT Wrapper</title>
+</head>
+<body>
+    <h1>ChatGPT Wrapper</h1>
+    <form method="post">
+        <textarea name="prompt" rows="4" cols="50" placeholder="Enter your prompt"></textarea>
+        <br>
+        <button type="submit">Ask</button>
+    </form>
+    {% if response %}
+        <h2>Response:</h2>
+        <p>{{ response }}</p>
+    {% endif %}
+</body>
+</html>
